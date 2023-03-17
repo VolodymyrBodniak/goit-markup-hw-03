@@ -8,6 +8,8 @@
   --white: #ffffff;
   --light: #f4f4fd;
   --pressed: #404bbf;
+
+  --card-set-gap: 24px;
 }
 
 html {
@@ -198,6 +200,11 @@ ul {
 }
 
 .button-portfolio {
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 69px;
+  border: 1px solid #e7e9fc;
+
   color: var(--primery-brand);
   background-color: var(--light);
   font-family: "Roboto", sans-serif;
@@ -212,6 +219,19 @@ ul {
 .button-portfolio:focus {
   background-color: var(--pressed);
   color: var(--white);
+}
+
+/* portfolio nav */
+.portfolio-nav {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  padding-top: 96px;
+  justify-content: center;
+}
+
+.portfolio-nav > .portfolio-nav-item + .portfolio-nav-item {
+  margin-left: 24px;
 }
 
 /* .button.primery {
@@ -337,3 +357,75 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* Portfolio */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(* var(--card-set-gap));
+  padding-top: 24px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list > .portfolio-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: calc(2 * var(--card-set-gap));
+}
+
+.card-link {
+  border: 1px solid #e7e9fc;
+}
+
+.portfolio-card {
+  margin-top: 32px;
+}
+
+.card-content {
+  padding-left: 16px;
+}
+
+.card-text {
+  margin-top: 8px;
+}
+
+/*  
+.card-set {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-text {
+  margin-top: 10px;
+
+*/
