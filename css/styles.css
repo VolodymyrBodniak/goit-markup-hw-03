@@ -57,13 +57,13 @@ ul {
   border-bottom: 1px solid #e7e9fc;
 }
 
+/* outline: 2px solid tomato; */
+
 .container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-
-  outline: 2px solid tomato;
 }
 
 .nav-box {
@@ -259,9 +259,9 @@ ul {
   margin-left: 24px;
   /* flex-basis: calc(100% / 4 -24px); */
 
-.features-item {
+/* .features-item {
   outline: 2px solid teal;
-}
+} */
 
 .description-title {
   margin-bottom: 8px;
