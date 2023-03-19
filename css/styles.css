@@ -153,7 +153,7 @@ img {
 /* hero image */
 .hero-image {
   margin: 0 auto;
-  padding: 188px 472px;
+  padding: 188px 0;
 
   background-color: var(--dark-beckground-color);
   color: var(--white);
@@ -192,13 +192,14 @@ img {
 .button:focus {
   background-color: var(--pressed);
   color: var(--white);
+  outline: none;
 }
 
 .button-portfolio {
   border-radius: 4px;
   padding: 12px 24px;
   min-width: 69px;
-  border: transparent;
+  border: 1px solid #e7e9fc;
 
   color: var(--primery-brand);
   background-color: var(--light);
@@ -214,6 +215,7 @@ img {
 .button-portfolio:focus {
   background-color: var(--pressed);
   color: var(--white);
+  outline: none;
 }
 
 /* .button.primery {
@@ -296,6 +298,7 @@ img {
 .team-list-item {
   padding-bottom: 32px;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white);
 }
@@ -340,7 +343,7 @@ img {
 .portfolio-nav {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   display: flex;
   justify-content: center;
 }
@@ -352,17 +355,19 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--card-set-gap);
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio-list > .portfolio-item {
   flex-basis: calc((100% - 48px) / 3);
-  margin-top: var(--card-set-gap);
 }
 
 .card-content {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
